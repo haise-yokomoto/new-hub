@@ -175,3 +175,9 @@ Open.MouseButton1Down:connect(function()
 MainFrame.Visible = true
 OpenFrame.Visible = false
 end)
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "esp loaded";
+Text = "Made By Me";
+Duration = 5;
+})
